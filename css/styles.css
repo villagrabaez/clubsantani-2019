@@ -1,0 +1,460 @@
+/*
+*   CSS
+*   BERNARDINO VILLAGRA BAEZ
+*   PROYECTO CLUB DEPORTIVO SANTANI 2019
+*/
+
+:root {
+    --color-principal: #333333;
+    --color-secundario: #222222;
+    --color-fuente-principal: #333333;
+    --color-fuente-secundario: #999999;
+    --fuente-principal: 'Roboto';
+    --fuente-secundaria: sans-serif;
+}
+
+::selection{
+    background-color: #333333;
+    color: #999999;
+}
+
+body {
+    font-family: var(--fuente-principal), var(--fuente-secundaria);
+}
+
+/************ Top Nav ************/
+.encabezado {
+    background-color: var(--color-principal);
+}
+
+.top-header .top-nav ul li a {
+    color: var(--color-fuente-secundario);
+    font-family: var(--fuente-principal), var(--fuente-secundaria);
+}
+
+/* Sociales */
+
+.top-sociales ul li a {
+    padding: 0;
+}
+
+.top-sociales ul li a::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.4rem;
+    color: var(--color-fuente-secundario);
+}
+.top-sociales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+.top-sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.top-sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+.top-sociales ul li a[href*="pinterest.com"]::before{
+    content: '\f0d2';
+}
+.top-sociales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
+
+/* Logo */
+
+.encabezado .logo {
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.encabezado .logo img {
+    height: 100px;
+    position: absolute;
+    top: 5px;
+    width: 100px;
+}
+
+/* Menu Principal */
+
+.menu-principal {
+    box-shadow: inset 0 -1px 0 var(--color-principal);
+}
+
+.navegacion-principal {
+    padding: 0;
+}
+
+.navegacion-principal .nav-link {
+    color: var(--color-fuente-principal);
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 1.4rem 1rem;
+    transition: all .3s ease;
+}
+
+.navegacion-principal .nav-link:hover {
+    box-shadow: inset 0 -3px 0 var(--color-principal);
+}
+
+/************ Slider ************/
+
+.slider {
+    padding: 0;
+}
+
+.slider .carousel-item img {
+    width: 100%;
+}
+
+.slider .carousel-caption a {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.slider .carousel-caption {
+    background-color: rgba(0, 0, 0, .7);
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 40px 100px;
+}
+
+.slider .carousel-indicators li {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.slider .carousel-indicators li.active {
+    background-color: #fdc600;
+}
+
+/************** Widget **************/
+
+.widget img {
+    width: 100%;
+}
+
+/************** El Más Grande Del Interior ***************/
+
+.grande {
+    background-color: var(--color-principal);
+}
+
+.grande h3 {
+    color: #fff;
+    font-family: var(--fuente-principal), var(--fuente-secundaria);
+    font-weight: 900;
+    font-size: 2.8rem;
+    height: 200px;
+    line-height: 200px;
+}
+
+/************ Noticias Principales *************/
+
+.ultimas-noticias h3,
+.santani-en-redes h3,
+.patrocinadores h3 {
+    border-bottom: 1px solid var(--color-principal);
+    color: var(--color-fuente-principal);
+    font-family: var(--fuente-principal), var(--fuente-secundaria);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.ultimas-noticias article img {
+    width: 100%;
+}
+
+.ultimas-noticias article p {
+    font-size: .9rem;
+}
+
+.ultimas-noticias article p span,
+.ultimas-noticias article p span a {
+    font-family: var(--fuente-principal), var(--fuente-secundaria);
+    color: var(--color-fuente-principal);
+    font-weight: 400;
+}
+
+.ultimas-noticias article p span a {
+    text-decoration: none;
+}
+
+.ultimas-noticias article h5 a {
+    color: var(--color-principal);
+    font-family: var(--fuente-principal), var(--fuente-secundaria);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* redes sociales */
+
+.redes-socliales ul li {
+    list-style: none;
+    display: inline-block;
+    height: 9rem;
+    margin: .4rem;
+    min-width: 15rem;
+    max-width: 20rem;
+    padding: 1rem;
+}
+
+.redes-socliales ul li:hover {
+    box-shadow: 0px 3px 0px 0 #222222;
+}
+
+.redes-socliales ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.redes-socliales ul li a .red-social-detalle {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.redes-socliales ul li a::before {
+    font-family: 'FontAwesome';
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.9rem;
+    color: #fff;
+}
+
+.redes-socliales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+
+.redes-socliales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+
+.redes-socliales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+
+.redes-socliales ul li a[href*="pinterest.com"]::before{
+    content: '\f0d2';
+}
+
+.redes-socliales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
+
+.redes-socliales ul li a {
+    text-decoration: none;
+}
+
+.redes-socliales ul li.facebook {
+    background-color: #3b5998;
+}
+
+.redes-socliales ul li.twitter {
+    background-color: #55acee;
+}
+
+.redes-socliales ul li.instagram {
+    background: radial-gradient(circle farthest-corner at 35% 90%,#fec564,transparent 50%),radial-gradient(circle farthest-corner at 0 140%,#fec564,transparent 50%),radial-gradient(ellipse farthest-corner at 0 -25%,#5258cf,transparent 50%),radial-gradient(ellipse farthest-corner at 20% -50%,#5258cf,transparent 50%),radial-gradient(ellipse farthest-corner at 100% 0,#893dc2,transparent 50%),radial-gradient(ellipse farthest-corner at 60% -20%,#893dc2,transparent 50%),radial-gradient(ellipse farthest-corner at 100% 100%,#d9317a,transparent),linear-gradient(#6559ca,#bc318f 30%,#e33f5f 50%,#f77638 70%,#fec66d);
+}
+
+.redes-socliales ul li.youtube {
+    background-color: #b00;
+}
+
+
+
+/************ Jugadores ************/
+
+.jugadores-fluid {
+    background-color: #222222;
+}
+
+.jugadores-fluid a {
+    color: #fff;
+    font-family: var(--fuente-principal), var(--fuente-secundaria);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.jugadores h3 {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-family: var(--fuente-principal), var(--fuente-secundaria);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.jugador .numero {
+    background-color: #333333;
+    color: #fff;
+    font-family: var(--fuente-principal), var(--fuente-secundaria);
+    font-weight: 900;
+    font-size: 2.8rem;
+}
+
+.jugador .jugador-detalle {
+    color: #333333;
+    font-family: var(--fuente-principal), var(--fuente-secundaria);
+    left: -15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.jugador .jugador-detalle .apellido {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.jugador .jugador-detalle .puesto {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*********** Footer *************/
+
+footer {
+    background-color: #222222;
+}
+
+footer .footer-logo {
+    width: 160px;
+}
+
+footer .footer-redes-sociales ul li {
+    display: inline-block;
+    margin: .3rem;
+}
+
+footer .footer-redes-sociales ul li a {
+    text-decoration: none;
+}
+
+footer .footer-redes-sociales ul li a::before {
+    font-family: 'FontAwesome';
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    padding: 2rem;
+    color: #bbbbbb;
+}
+
+footer .footer-redes-sociales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+
+footer .footer-redes-sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+
+footer .footer-redes-sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+
+footer .footer-redes-sociales ul li a[href*="pinterest.com"]::before{
+    content: '\f0d2';
+}
+
+footer .footer-redes-sociales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
+
+footer h3 {
+    color: #bbbbbb;
+    font-family: var(--fuente-principal), var(--fuente-secundaria);
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+footer p {
+    color: #bbbbbb; 
+    font-family: var(--fuente-principal), var(--fuente-secundaria);
+}
+
+/************ Modificación de Estilos de Boostrap ************/
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+  }
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+/************ Responsive Breakpoints  ************/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .menu-movil .col {
+        padding: 0;
+    }
+    .menu-movil nav {
+        background-color: #222222 !important;
+    }
+    .menu-movil nav ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+    .menu-movil nav ul li a {
+        text-align: center;
+    }
+    .slider-fluid {
+        padding: 0;
+    }
+    .slider .carousel-caption {
+        padding: 5px 15px 28px 15px;
+    }
+    .slider .carousel-caption h3 {
+        line-height: .8rem;
+    }
+    .slider .carousel-caption a {
+        font-size: 1rem;
+        font-weight: 500;
+        overflow: hidden;
+    }
+    .widget {
+        margin-top: 1rem!important;
+        margin-bottom: 1rem!important;
+    }
+    .grande {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    .grande h3 {
+        font-size: 1.3rem;
+        height: 140px;
+        line-height: 140px;
+        text-align: center;
+    }
+    .ultimas-noticias,
+    .santani-en-redes {
+        margin-top: 2rem !important;
+        margin-bottom: 1rem !important; 
+    }
+    .redes-socliales ul li {
+        width: 100%;
+    }
+    footer .footer-redes-sociales ul li a::before {
+        padding: .7rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    
+}
