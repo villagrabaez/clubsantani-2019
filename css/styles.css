@@ -89,6 +89,21 @@ body {
     padding: 0;
 }
 
+.navegacion-principal .dropdown-menu {
+    border-radius: 0;
+    margin: 0;
+}
+
+.navegacion-principal .dropdown-menu a.dropdown-item {
+    color: var(--color-fuente-principal);
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+}
+
+.navegacion-principal .dropdown-menu a.dropdown-item:hover{
+    text-decoration: #222222;
+}
+
 .navegacion-principal .nav-link {
     color: var(--color-fuente-principal);
     font-weight: 400;
@@ -365,7 +380,7 @@ footer .footer-redes-sociales ul li a[href*="youtube.com"]::before{
 }
 
 footer h3 {
-    color: #bbbbbb;
+    color: #fdc600;
     font-family: var(--fuente-principal), var(--fuente-secundaria);
     font-weight: 400;
     font-size: 2.5rem;
@@ -410,6 +425,7 @@ footer p {
     }
     .slider-fluid {
         padding: 0;
+        margin-top: 70px;
     }
     .slider .carousel-caption {
         padding: 5px 15px 28px 15px;
